@@ -20,8 +20,7 @@
     "lint:js": "eslint src/**/*.{js,jsx}",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "push": "git push -u origin main"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
