@@ -1,21 +1,24 @@
 import { Outlet } from 'react-router-dom';
-import { Container, Header, Logo, Link, LinkStd } from './SharedLayout.styled';
 import { Suspense } from 'react';
+import {
+  Container,
+  Header,
+  Logo,
+  Link,
+  IconMovie,
+} from './SharedLayout.styled';
 
 export const SharedLayout = () => {
   return (
     <Container>
       <Header>
-        <Logo>
-          <span role="img" aria-label="computer icon">
-            <LinkStd to="/">💻</LinkStd>
-          </span>{' '}
-          Good Store
-        </Logo>
+        <IconMovie />
+        <Logo></Logo>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/about">About</Link>
+          <Link to="/movies">Movies</Link>
+          {/* <Link to="/products">Products</Link> */}
+          {/* <Link to="/about">About</Link> */}
         </nav>
       </Header>
       <Suspense fallback={<div>Loading...</div>}>

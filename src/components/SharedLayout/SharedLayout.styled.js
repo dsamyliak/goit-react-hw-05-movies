@@ -1,29 +1,40 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { FcFilm } from 'react-icons/fc';
 
 export const Container = styled.div`
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 20px auto;
   padding: 0 16px;
 `;
 
 export const Header = styled.header`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: left;
+  // justify-content: space-between;
   gap: 12px;
   padding: 8px 0;
   margin-bottom: 16px;
-  border-bottom: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   > nav {
     display: flex;
   }
 `;
 
-export const Logo = styled.p`
+export const Logo = styled.div`
   font-weight: 700;
-  margin: 0;
+  margin: 0px;
+  padding-top: 8px;
+  text-align: center;
+`;
+
+export const IconMovie = styled(FcFilm)`
+  width: 30px;
+  height: 30px;
+  padding: 2px 5px;
+  // position: absolute;
+  // left: 6px;
 `;
 
 export const Link = styled(NavLink)`
@@ -37,18 +48,4 @@ export const Link = styled(NavLink)`
     color: white;
     background-color: blue;
   }
-`;
-
-export const LinkStd = styled(NavLink)`
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-
-  // &.active {
-  //   color: black;
-  //   border: 1px black solid;
-  //   border-radius: 16px;
-  // }
 `;
