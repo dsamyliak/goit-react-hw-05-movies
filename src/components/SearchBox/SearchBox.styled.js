@@ -20,5 +20,26 @@ export const Icon = styled(FcSearch)`
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 6px;
+  right: 4px;
+  bottom: 2px;
+`;
+
+export const Button = styled.button`
+  width: 30px;
+  height: 25px;
+
+  border: transparent;
+  border-left: 1px solid grey;
+  border-radius: 5px;
+  background-color: transparent;
+  position: absolute;
+  right: 4px;
+
+  &:hover {
+    // background-color: lightgrey;
+    cursor: pointer;
+  }
+  &:active {
+    border-right: 1px solid lightgrey;
+  }
 `;
