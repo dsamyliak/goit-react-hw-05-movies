@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_react_hw_05_movies=self.webpackChunkgoit_react_hw_05_movies||[]).push([[648],{648:function(e,s,r){r.r(s);var t=r(184);s.default=function(){return(0,t.jsxs)("main",{children:[(0,t.jsx)("h1",{children:"MyComponent"}),(0,t.jsx)("img",{src:"https://www.topgear.com/sites/default/files/cars-car/carousel/2020/07/dsc09285.jpg?w=892&h=502",alt:""}),(0,t.jsx)("p",{children:"Ferrari"})]})}}}]);
-//# sourceMappingURL=648.2c926486.chunk.js.map
