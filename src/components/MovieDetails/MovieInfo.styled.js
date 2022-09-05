@@ -19,7 +19,7 @@ export const CardWrapper = styled.div`
 `;
 export const ImageBlock = styled.img`
   display: inline-flex;
-  width: 300px;
+  width: 30%;
 `;
 export const Header1 = styled.h1`
   padding: 0;
