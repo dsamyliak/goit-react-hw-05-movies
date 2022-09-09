@@ -4,6 +4,7 @@ import {
   ImageBlock,
   Header1,
 } from './MovieInfo.styled';
+import PropTypes from 'prop-types';
 
 export const MovieInfo = ({ dataMovie, imageSrc, dataGenres, dataRelease }) => {
   return (
@@ -19,4 +20,11 @@ export const MovieInfo = ({ dataMovie, imageSrc, dataGenres, dataRelease }) => {
       </CardWrapper>
     </Container>
   );
+};
+
+MovieInfo.propTypes = {
+  dataMovie: PropTypes.object,
+  imageSrc: PropTypes.string,
+  dataGenres: PropTypes.string,
+  dataRelease: PropTypes.string,
 };

@@ -1,18 +1,16 @@
 import { useState, useEffect } from 'react';
-import getTrendingMovies from '../../services/getTrendingMovies';
 import { Link, useLocation } from 'react-router-dom';
+import getTrendingMovies from '../../services/getTrendingMovies';
 
 const Home = () => {
   const [trendingMovies, setTrendingMovies] = useState([]);
+  const location = useLocation();
 
-  //DidMount
   useEffect(() => {
     getTrendingMovies().then(dbData => {
       setTrendingMovies(dbData.data.results);
     });
   }, []);
-
-  const location = useLocation();
 
   return (
     <main>

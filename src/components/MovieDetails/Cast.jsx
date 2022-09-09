@@ -5,6 +5,7 @@ const Cast = () => {
   const { movieId } = useParams();
 
   const [castHtml, setCastHtml] = useState('');
+  const [castLength, setCastLength] = useState(0);
 
   useEffect(() => {
     getMovieCast(movieId).then(movieData => {
@@ -21,13 +22,14 @@ const Cast = () => {
           </li>
         ))
       );
+      setCastLength(movieData.data.cast.length);
     });
   }, [movieId]);
 
   return (
     <section>
       <h2>Cast</h2>
-      <ul>{castHtml}</ul>
+      <ul>{castLength !== 0 ? castHtml : 'No cast info for this movie'}</ul>
     </section>
   );
 };

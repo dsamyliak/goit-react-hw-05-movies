@@ -36,7 +36,6 @@ export const Button = styled.button`
   right: 4px;
 
   &:hover {
-    // background-color: lightgrey;
     cursor: pointer;
   }
   &:active {

@@ -11,7 +11,6 @@ export const Container = styled.div`
 export const Header = styled.header`
   display: flex;
   align-items: left;
-  // justify-content: space-between;
   gap: 12px;
   padding: 8px 0;
   margin-bottom: 16px;
@@ -33,8 +32,6 @@ export const IconMovie = styled(FcFilm)`
   width: 30px;
   height: 30px;
   padding: 2px 5px;
-  // position: absolute;
-  // left: 6px;
 `;
 
 export const Link = styled(NavLink)`

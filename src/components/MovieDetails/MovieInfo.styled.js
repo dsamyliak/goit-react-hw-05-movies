@@ -2,16 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: inline-flex;
-  // grid-template-columns: repeat(auto-fit, 200px);
-  // gap: 16px;
+  width: auto;
 `;
 
 export const CardWrapper = styled.div`
   display: block;
   padding: 30px;
-
-  // border: 1px solid black;
-  // border-radius: 4px;
 
   > a {
     text-decoration: none;
