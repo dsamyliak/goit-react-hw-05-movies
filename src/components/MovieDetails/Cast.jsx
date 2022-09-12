@@ -1,6 +1,7 @@
 import getMovieCast from '../../services/getMovieCast';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
 const Cast = () => {
   const { movieId } = useParams();
 
@@ -15,6 +16,10 @@ const Cast = () => {
             <img
               src={`https://image.tmdb.org/t/p/w500${castEl.profile_path}`}
               alt={`Actor: ${castEl.name}`}
+              onError={e => {
+                e.target.src =
+                  'https://via.placeholder.com/116x174/808080/000000?text=NO+PHOTO';
+              }}
               width="10%"
             />
             <p>{castEl.name}</p>
